@@ -1,8 +1,13 @@
-# 🏟️ Sistema Híbrido de Proyección de Trayectorias de Carrera en Baseball
+# ⚾ Sistema Predictivo MLB - Análisis de Rendimiento Ofensivo con Machine Learning
 
-**Universidad Complutense de Madrid - Máster en Data Science, Big Data & Business Analytics**
+![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
+![Jupyter](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=flat&logo=jupyter&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=Streamlit&logoColor=white)
 
-> Sistema predictivo que combina clustering de arquetipos ofensivos con modelado temporal para proyectar el rendimiento futuro (OPS) de jugadores de MLB.
+> **Trabajo Fin de Máster** - Máster en Data Science, Big Data & Business Analytics  
+> **Universidad Complutense de Madrid (UCM)** - 2024  
+> **Autor**: Sergio Grigorow
 
 ## 🎯 **Objetivo del Proyecto**
 
@@ -49,12 +54,10 @@ Desarrollar un sistema híbrido que supere la precisión de métodos tradicional
 ```
 baseball-career-projection/
 ├── data/
-│   ├── raw/                    # Datos originales (Batting.csv, Fielding.csv, People.csv)
-│   └── processed/              # Datos procesados y features
-├── models/                     # Modelos entrenados y metadata
-├── notebooks/
-│   └── TFMasterV2.ipynb       # Notebook principal completo
-├── src/                        # Código fuente modularizado
+│   ├── raw/                   # Datos originales (Batting.csv, Fielding.csv, People.csv)
+│   └── processed/             # Datos procesados y features
+├── models/                    # Modelos entrenados y metadata
+├── TFMasterV2.ipynb           # Notebook principal completo
 ├── app.py                     # Aplicación Streamlit
 ├── requirements.txt           # Dependencias
 └── README.md                  # Este archivo
@@ -64,7 +67,7 @@ baseball-career-projection/
 
 ### 1. Clonar el Repositorio
 ```bash
-git clone https://github.com/tu-usuario/baseball-career-projection.git
+git clone https://github.com/tgrigorow1974/Trabajo-Versio-2.git
 cd baseball-career-projection
 ```
 
@@ -127,7 +130,7 @@ streamlit run app.py
 
 ### Validación Externa
 - **Comparación directa** con ZiPS y Steamer (2024)
-- **Casos de prueba**: Trout, Betts, Soto
+- **Caso de prueba**: Bagwell
 - **Competitividad demostrada** en escenarios reales
 
 ## 👨‍💼 **Autor y Supervisión**
