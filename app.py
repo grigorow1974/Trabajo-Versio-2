@@ -1,11 +1,10 @@
+import matplotlib
+matplotlib.use('Agg') 
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 import joblib
-from io import BytesIO
-import base64
 
 # Diccionario de logos de equipos
 team_logos = {
