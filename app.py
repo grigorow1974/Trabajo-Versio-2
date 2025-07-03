@@ -72,11 +72,11 @@ def load_model():
         return None, None, None
 
 # =============================================================================
-# FUNCIONES DE PREDICCIÓN (SOLO FEATURES ERA-AJUSTADAS)
+# FUNCIONES DE PREDICCIÓN 
 # =============================================================================
 
 def predict_individual_player(player_id, df_all, model, feature_cols, model_metadata, years=3):
-    """Predice OPS para un jugador individual usando solo features era-ajustadas."""
+    """Predice OPS para un jugador individual"""
     
     player_data = df_all[df_all['playerID'] == player_id].sort_values('yearID')
     
@@ -135,7 +135,7 @@ def predict_individual_player(player_id, df_all, model, feature_cols, model_meta
     }, None
 
 def predict_multiple_players(player_ids, df_all, model, feature_cols, model_metadata, eligible_players):
-    """Predice OPS para múltiples jugadores usando solo features era-ajustadas."""
+    """Predice OPS para múltiples jugadores"""
     
     results = []
     
@@ -185,10 +185,6 @@ model, feature_cols, model_metadata = load_model()
 if df_all is None or model is None:
     st.stop()
 
-# Verificar features era-ajustadas
-era_features = [f for f in feature_cols if 'era_adjusted' in f] if feature_cols else []
-era_percentage = (len(era_features) / len(feature_cols) * 100) if feature_cols else 0
-
 # Lista de jugadores disponibles
 lista_jugadores = eligible_players['name'].tolist()
 
@@ -201,10 +197,7 @@ st.sidebar.markdown(f"**Jugadores disponibles:** {len(lista_jugadores):,}")
 st.sidebar.markdown(f"**Registros totales:** {len(df_all):,}")
 st.sidebar.markdown(f"**Años cubiertos:** {df_all['yearID'].min()}-{df_all['yearID'].max()}")
 st.sidebar.markdown(f"**MAE del modelo:** {model_metadata['validation_mae']:.4f}")
-st.sidebar.markdown("### 🎯 Características del Modelo")
-st.sidebar.markdown(f"**Features era-ajustadas:** {len(era_features)}/{len(feature_cols)} ({era_percentage:.1f}%)")
-st.sidebar.markdown("✅ **Consistencia metodológica**: Solo features era-ajustadas")
-st.sidebar.markdown("✅ **Sin redundancia**: No variables originales")
+
 
 # =============================================================================
 # HEADER PRINCIPAL
@@ -512,8 +505,8 @@ if st.button("Predecir"):
                 # Título
                 model_name = model_metadata['model_name'] if model_metadata else 'Random Forest'
                 ax.set_title(
-                    f"Sistema Solo Era-Ajustado OPS 2024: Pesimista | Realista | Optimista\n"
-                    f"({model_name}, {len(feature_cols)} features, {len(era_features)} era-ajustadas)",
+                    f"Sistema OPS 2024: Pesimista | Realista | Optimista\n"
+                    f"({model_name}, {len(feature_cols)} features)",
                     fontsize=14, fontweight='bold'
                 )
 
