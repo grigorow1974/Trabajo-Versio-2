@@ -1,5 +1,7 @@
 # ⚾ Trabajo Fin de Máster – Sistema de Proyección de Rendimiento en MLB con Machine Learning
 
+![Vista previa del sistema](images/preview_radar.png)
+
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![Jupyter](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=flat&logo=jupyter&logoColor=white)
@@ -156,9 +158,9 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la branch (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 🤝 **Aplicación Interactiva**
+## 🚀 **Aplicación Interactiva**
 
-- 🚀 Aplicación interactiva: [Abrir en Streamlit](https://tu-url.streamlit.app)
+- Aplicación interactiva: [Abrir en Streamlit](https://tu-url.streamlit.app)
 ---
 
 ⚾ **¡Disfruta explorando el futuro del baseball analytics!**
