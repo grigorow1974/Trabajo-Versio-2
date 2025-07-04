@@ -1,4 +1,5 @@
-# ⚾ Sistema Predictivo MLB - Análisis de Rendimiento Ofensivo con Machine Learning
+# ⚾ Trabajo Fin de Máster – Sistema de Proyección de Rendimiento en MLB con Machine Learning
+
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![Jupyter](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=flat&logo=jupyter&logoColor=white)
@@ -11,7 +12,8 @@
 
 ## 🎯 **Objetivo del Proyecto**
 
-Desarrollar un sistema híbrido que supere la precisión de métodos tradicionales de proyección en baseball mediante la integración de:
+Desarrollar un sistema híbrido que combine técnicas de clustering y modelado predictivo para proyectar el rendimiento ofensivo de jugadores de MLB, superando la precisión de métodos tradicionales.  
+
 - **Clustering de arquetipos de jugadores** (ajustado por era temporal)
 - **Modelado de series temporales** para capturar patrones de envejecimiento
 - **Features de contexto** que mejoren las predicciones individuales
@@ -27,9 +29,9 @@ Desarrollar un sistema híbrido que supere la precisión de métodos tradicional
 ### Benchmarking contra Sistemas Profesionales
 | Sistema | MAE | R² | % Casos Ganados |
 |---------|-----|----|-----------------| 
-| **Nuestro Modelo** | 0.0840 | 0.108 | **39.0%** |
-| ZiPS | 0.0804 | 0.172 | 36.2% |
-| Steamer | 0.0828 | 0.163 | 24.8% |
+| **Nuestro Modelo** | 0.0814 | 0.15 | **39.4%** |
+| ZiPS | 0.0804 | 0.17 | 36.6% |
+| Steamer | 0.0829 | 0.16 | 24.0% |
 
 ## 🏗️ **Arquitectura del Sistema**
 
@@ -67,8 +69,8 @@ baseball-career-projection/
 
 ### 1. Clonar el Repositorio
 ```bash
-git clone https://github.com/tgrigorow1974/Trabajo-Versio-2.git
-cd baseball-career-projection
+git clone https://github.com/tgrigorow1974/TrabajoFinDeMaster.git
+cd Trabajo-Version-2
 ```
 
 ### 2. Instalar Dependencias
@@ -154,6 +156,9 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la branch (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
+## 🤝 **Aplicación Interactiva**
+
+- 🚀 Aplicación interactiva: [Abrir en Streamlit](https://tu-url.streamlit.app)
 ---
 
 ⚾ **¡Disfruta explorando el futuro del baseball analytics!**
