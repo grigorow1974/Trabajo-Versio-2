@@ -1,8 +1,5 @@
 # ⚾ Trabajo Fin de Máster – Sistema de Proyección de Rendimiento en MLB con Machine Learning
 
-![Vista previa del sistema](images/preview_radar.png)
-
-
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![Jupyter](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=flat&logo=jupyter&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white)
